@@ -21,23 +21,18 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
-## About Me
-My name is Maureen Muthengi, and I am a dynamic professional with a robust background in data science, public policy, and information technology. I am currently pursuing a Master of Science in Data Science and Analytics from Grand Valley State University, complementing my Bachelor of Science in Information Technology from Jomo Kenyatta University of Agriculture and Technology.
+## Bio
+I am a dynamic professional with expertise in data science, public policy, and IT, pursuing a Master's in Data Science and Analytics at Grand Valley State University, with extensive UNHCR experience and proficiency in data analysis tools.
 
-Professional Experience
+## Education
+MSc, Data Science and Analytics, Grand Valley State University, Allendale, MI, April 2025
 
-I have extensive experience at the United Nations High Commissioner for Refugees (UNHCR) from 2009 to 2023, where I honed my skills in data extraction, analysis, and visualization using tools like PowerBI, Tableau, R, SQL, and Python. I am adept at project management, stakeholder collaboration, and delivering actionable insights.
+MA, Public Policy and Management, Strathmore University, Nairobi, Kenya, December 2020
 
-Key Initiatives
+BSc, Information Technology, Jomo Kenyatta University of Agriculture and Technology, Juja, Kenya, July 2008
 
-I lead the "Donate a Pad Initiative" in Kitui, Kenya, providing sanitary towels and mentorship to girls in primary and high schools.
-
-Professional Development
-
-I hold the Google Data Analytics Professional Certificate and the 10Alytics Data and Strategy certificate. I am also a data analyst for the Citizen’s Climate Lobby and Vice President of the African Student Council at Grand Valley State University.
-
-Contributions and Recognition
-
-I have presented papers at international conferences, received recognition for my service to UNHCR, and served as a board member and keynote speaker. I am passionate about leveraging data to drive impactful change.
+## Work Experience
+United Nations High Commissioner for Refugees (UNHCR), Resettlement Associate, 2009-2023
 
 
+Favorite quote: Start where you are. Use what you have. Do what you can~Arthur Ashe
