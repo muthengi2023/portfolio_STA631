@@ -2,11 +2,10 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this site",
-      "description": "Some additional details about the website",
+      "title": "Maureen Muthengi",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2024-08-03T20:27:51-04:00"
+      "contents": "\n\nAbout Me\nMy name is Maureen Muthengi, and I am a dynamic professional with a robust background in data science, public policy, and information technology. I am currently pursuing a Master of Science in Data Science and Analytics from Grand Valley State University, complementing my Bachelor of Science in Information Technology from Jomo Kenyatta University of Agriculture and Technology.\nProfessional Experience\nI have extensive experience at the United Nations High Commissioner for Refugees (UNHCR) from 2009 to 2023, where I honed my skills in data extraction, analysis, and visualization using tools like PowerBI, Tableau, R, SQL, and Python. I am adept at project management, stakeholder collaboration, and delivering actionable insights.\nKey Initiatives\nI lead the “Donate a Pad Initiative” in Kitui, Kenya, providing sanitary towels and mentorship to girls in primary and high schools.\nProfessional Development\nI hold the Google Data Analytics Professional Certificate and the 10Alytics Data and Strategy certificate. I am also a data analyst for the Citizen’s Climate Lobby and Vice President of the African Student Council at Grand Valley State University.\nContributions and Recognitions\nI have presented papers at international conferences, received recognition for my service to UNHCR, and served as a board member and keynote speaker. I am passionate about leveraging data to drive impactful change.\n\n\n\n",
+      "last_modified": "2024-08-03T20:38:45-04:00"
     },
     {
       "path": "index.html",
@@ -14,7 +13,7 @@
       "description": "Welcome to the website. I hope you enjoy it!\n",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2024-08-03T20:27:51-04:00"
+      "last_modified": "2024-08-03T20:38:46-04:00"
     }
   ],
   "collections": []
