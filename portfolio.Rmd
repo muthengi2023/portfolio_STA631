@@ -135,38 +135,38 @@ logit(𝑝^) =𝛽0+𝛽1×add_to_cart_order
 
 Given the coefficient estimates from the output:
 
-𝛽0(Intercept) = 0.6827482
-β 1(add_to_cart_order) = -0.0380813
+𝛽0(Intercept) = 0.06848
+β 1(add_to_cart_order) = -0.003812
 Thus, the equation becomes:
 
-logit(𝑝^) = 0.6827482−0.0380813×add_to_cart_order
+logit(𝑝^) = 0.06848−0.003812×add_to_cart_order
 
 Interpreting the Coefficients:
 Intercept (𝛽0): This is the log-odds of the outcome (reordered) when the predictor (add_to_cart_order) is 0. In practice, an add_to_cart_order of 0 might not be meaningful, but this is the baseline level in the model.
-Slope (𝛽1): This represents the change in the log-odds of the outcome for a one-unit increase in the predictor. Specifically, for each additional position in the order that a product is added to the cart, the log-odds of the product being reordered decreases by 0.0380813.
+Slope (𝛽1): This represents the change in the log-odds of the outcome for a one-unit increase in the predictor. Specifically, for each additional position in the order that a product is added to the cart, the log-odds of the product being reordered decreases by -0.003812.
 
 Model in Probability Terms:
 The logistic regression model can also be expressed in terms of the probability 
 p^ of the event occurring (i.e., the product being reordered):
 
-𝑝^ =1/1+e −(0.6827482−0.0380813×add_to_cart_order)
+𝑝^ =1/1+e −(0.06848−0.003812×add_to_cart_order)
 ​
 This equation gives the predicted probability of a product being reordered based on its add_to_cart_order value.
 
 Interpretation
 
 1. Coefficients
-Intercept (β₀): 0.6823680, this is the log-odds of reordering when add_to_cart_order is 0. In probability terms, this translates to the odds of reordering when the add_to_cart_order is at its baseline (which might be a low value if the minimum value of add_to_cart_order is not zero).
+Intercept (β₀): 0.06848, this is the log-odds of reordering when add_to_cart_order is 0. In probability terms, this translates to the odds of reordering when the add_to_cart_order is at its baseline (which might be a low value if the minimum value of add_to_cart_order is not zero).
 
-add_to_cart_order (β₁): -0.0379998, for each one-unit increase in add_to_cart_order, the log-odds of reordering decreases by 0.0380813. This suggests that as a product is placed further down the cart, the probability of reordering decreases.
+add_to_cart_order (β₁): -0.003812, for each one-unit increase in add_to_cart_order, the log-odds of reordering decreases by 0.0380813. This suggests that as a product is placed further down the cart, the probability of reordering decreases.
 
 Significance: The p-value is very small (< 2e-16), indicating that add_to_cart_order is highly significant in predicting the likelihood of reordering.
 
 Interpretation:
-Intercept: The estimate for the intercept is 0.6848. This represents the log-odds of the reordered variable when add_to_cart_order is zero. Since this is a logistic regression, the exponentiated value of the intercept (exp(0.6848)) would give the odds of reordering when add_to_cart_order is zero.
+Intercept: The estimate for the intercept is 0.6848. This represents the log-odds of the reordered variable when add_to_cart_order is zero. Since this is a logistic regression, the exponentiated value of the intercept (exp(0.06848)) would give the odds of reordering when add_to_cart_order is zero.
 add_to_cart_order:
 
-The estimate for add_to_cart_order is -0.03812. This negative value indicates that for each one-unit increase in the add_to_cart_order variable, the log-odds of reordering decreases by 0.03812. In other words, the later an item is added to the cart, the less likely it is to be reordered.
+The estimate for add_to_cart_order is -0.003812. This negative value indicates that for each one-unit increase in the add_to_cart_order variable, the log-odds of reordering decreases by 0.03812. In other words, the later an item is added to the cart, the less likely it is to be reordered.
 The p-value for this coefficient is < 2e-16, which is highly significant, suggesting that add_to_cart_order is a significant predictor of whether an item will be reordered.
 
 Model Fit: The residual deviance (43342897) being less than the null deviance (43914253) indicates that the model with the predictor add_to_cart_order fits the data better than the null model.
