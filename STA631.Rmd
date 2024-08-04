@@ -1,6 +1,6 @@
 ---
 title: "STA 631: Statistical Modeling and Regression"
-listing: "STA631 Course"
+site: distill::distill_website
 ---
 
 This course follows a traditional and modern computationally intensive statistical modeling techniques. Basics of probability theory, including conditional probability, Bayes' Theorem, and univariate probability models. Regression modeling and prediction including simple linear, multiple, logistic, Poisson, nonlinear and nonparametric regression. Methods for model selection and shrinkage. Emphasis is on application and interpretation using statistical software.
