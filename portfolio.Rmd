@@ -208,7 +208,7 @@ To assess the model performance, we will calculate the accuracy and confusion ma
 ![](model performance.png)
 
 Interpretation
-Accuracy: 0.5972, this is the proportion of all correct predictions (both 0 and 1) out of the total number of predictions. It indicates that about 59.67% of the predictions made by the model are correct.
+Accuracy: 0.5972, this is the proportion of all correct predictions (both 0 and 1) out of the total number of predictions. It indicates that about 59.72% of the predictions made by the model are correct.
 
 95% Confidence Interval for Accuracy: (0.597, 0.5973), we are 95% confident that the true accuracy of the model is between 59.7% and 59.73%.
 
