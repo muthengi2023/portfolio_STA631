@@ -1,7 +1,21 @@
 ---
 title: "Maureen Muthengi"
+image: "Maureen_Muthengi.jpg"
+links:
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/maureenmuthengi/"
+  - label: GitHub
+    url: "https://github.com/muthengi2023"
+  - label: Email
+    url: "mailto:email@email.com"
+output:
+  postcards::trestles
 site: distill::distill_website
 ---
+
+```{r}
+library(postcards)
+```
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
