@@ -8,7 +8,7 @@ navbar:
     
     - text: "About"
       href: about.html
-    - text: "portfolio"
+    - text: "Portfolio"
       href: portfolio.html
     - text: "STA631"
       href: portfolio.html
