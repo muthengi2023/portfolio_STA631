@@ -136,8 +136,13 @@ logit(𝑝^) =𝛽0+𝛽1×add_to_cart_order
 Given the coefficient estimates from the output:
 
 𝛽0(Intercept) = 0.06848
+
+
 β 1(add_to_cart_order) = -0.003812
+
+
 Thus, the equation becomes:
+
 
 logit(𝑝^) = 0.06848−0.003812×add_to_cart_order
 
