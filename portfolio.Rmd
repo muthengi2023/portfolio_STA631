@@ -56,7 +56,7 @@ Estimate: -0.030806
 Std. Error: 0.000006139
 z value: -620
 P-value: 2e-16
-The coefficient for add_to_cart_order represents the change in the log-odds of the response variable for a one-unit increase in add_to_cart_order. Since the estimate is -0.0379922, it means that for each additional unit increase in add_to_cart_order, the log-odds of a product being reordered decreases by -0.0379922. 
+The coefficient for add_to_cart_order represents the change in the log-odds of the response variable for a one-unit increase in add_to_cart_order. Since the estimate is -0.030806, it means that for each additional unit increase in add_to_cart_order, the log-odds of a product being reordered decreases by -0.030806. 
 
 The negative sign indicates an inverse relationship between add_to_cart_order and the likelihood of reordering. The high absolute value of the z score and the p-value of less than 2e-16 suggest that this predictor is highly statistically significant.
 
