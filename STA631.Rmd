@@ -1,0 +1,52 @@
+---
+title: "STA 631: Statistical Modeling and Regression"
+listing: "STA631 Course"
+---
+
+This course follows a traditional and modern computationally intensive statistical modeling techniques. Basics of probability theory, including conditional probability, Bayes' Theorem, and univariate probability models. Regression modeling and prediction including simple linear, multiple, logistic, Poisson, nonlinear and nonparametric regression. Methods for model selection and shrinkage. Emphasis is on application and interpretation using statistical software.
+
+## Topics Covered
+
+### Simple Linear Regression
+Simple Linear Regression is a statistical method used to model the relationship between a dependent variable and a single independent variable. The model assumes a linear relationship, where the equation of the line (y = mx + c) represents the best fit for the data points. This method is used to predict the value of the dependent variable based on the independent variable.
+
+### Multiple Linear Regression
+Multiple Linear Regression extends simple linear regression by using two or more independent variables to predict a dependent variable. The model still assumes a linear relationship but includes additional predictors to improve the accuracy of the prediction. The equation takes the form y = b0 + b1x1 + b2x2 + ... + bnxn.
+
+### Logistic Regression
+Logistic Regression is used when the dependent variable is categorical, often binary. It models the probability that a given input point belongs to a certain class. Instead of fitting a line, it fits an S-shaped logistic function, which outputs probabilities that can be mapped to binary outcomes.
+
+### Multinomial Regression
+Multinomial Regression is an extension of logistic regression that deals with dependent variables with more than two categories. It models the probabilities of the different possible outcomes of a categorical dependent variable, given a set of independent variables.
+
+### Generalized Linear Model (GLM)
+Generalized Linear Models extend linear regression to models with a non-normal distribution of the dependent variable. GLMs consist of three components: a linear predictor, a link function, and a variance function that describes the distribution of the dependent variable. Examples include logistic regression and Poisson regression.
+
+### Resampling and Cross-validation
+Resampling methods, such as bootstrapping and permutation tests, involve repeatedly drawing samples from the data and refitting the model to understand the variability of the estimator. Cross-validation is a technique for assessing how well a model generalizes to an independent dataset by partitioning the data into training and testing sets multiple times.
+
+### Model Selection and Multiple Testing
+Model selection involves choosing the best model from a set of potential models based on criteria like AIC, BIC, or adjusted R-squared. Multiple testing refers to the statistical analysis process where multiple hypotheses are tested simultaneously. Adjustments like Bonferroni correction are used to control the family-wise error rate.
+
+## Tools Used
+
+### R Studio
+RStudio is our go-to integrated development environment (IDE) for R, the programming language we use for statistical computing and graphics in STA 631. It offers a user-friendly interface with a console, syntax-highlighting editor, and essential tools for plotting, history, and workspace management. This setup makes developing our R scripts and projects both efficient and enjoyable.
+
+### GitHub
+GitHub is an essential tool for us in STA 631, facilitating version control and collaborative software development. This web-based platform hosts our Git repositories and provides us with tools for code review, project management, and collaboration. By using GitHub, we can efficiently track changes, manage issues, and contribute to projects, making it an invaluable resource for our class activities and projects.
+
+
+## Text Materials
+
+An Introduction to Statistical Learning with R (ISLR)
+"An Introduction to Statistical Learning with R" (ISLR) by Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani is a comprehensive guide to statistical learning methods. It covers a range of topics, including linear regression, classification, resampling methods, shrinkage approaches, tree-based methods, support vector machines, clustering, and more, with practical examples using R.
+
+Data Feminism
+"Data Feminism" by Catherine D'Ignazio and Lauren F. Klein explores the intersection of data science and feminism. The book discusses how data science can be used to challenge power structures and promote social justice. It emphasizes the importance of considering context, ethics, and the voices of marginalized groups in data practices.
+
+Tidy Modeling with R
+"Tidy Modeling with R" by Max Kuhn and Julia Silge introduces the tidymodels framework for modeling and machine learning in R. The book covers a range of modeling techniques, from basic to advanced, using a consistent and tidy approach. It emphasizes practical applications, reproducibility, and ease of use.
+
+R for Data Science (2nd Edition)
+"R for Data Science" by Hadley Wickham and Garrett Grolemund is an essential guide for anyone working with data in R. The second edition covers the tidyverse, a collection of R packages designed for data science. Topics include data import, tidying, transformation, visualization, and modeling, with a focus on practical applications and real-world examples.

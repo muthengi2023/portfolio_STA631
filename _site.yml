@@ -7,7 +7,7 @@ navbar:
   right:
     
     - text: "About"
-      href: about.html
+      href: index.html
     - text: "portfolio"
       href: portfolio.html
     - text: "STA631"
