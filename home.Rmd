@@ -1,0 +1,38 @@
+---
+title: "Maureen Muthengi"
+image: "Maureen_Muthengi.jpg"
+links:
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/maureenmuthengi/"
+  - label: GitHub
+    url: "https://github.com/muthengi2023"
+  - label: Email
+    url: "mailto:email@email.com"
+output:
+  postcards::trestles
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+```
+
+## Bio
+I am a dynamic professional with expertise in data science, public policy, and IT, pursuing a Master's in Data Science and Analytics at Grand Valley State University, with extensive UNHCR experience and proficiency in data analysis tools.
+
+## Education
+MSc, Data Science and Analytics, Grand Valley State University, Allendale, MI, April 2025
+
+MA, Public Policy and Management, Strathmore University, Nairobi, Kenya, December 2020
+
+BSc, Information Technology, Jomo Kenyatta University of Agriculture and Technology, Juja, Kenya, July 2008
+
+## Work Experience
+United Nations High Commissioner for Refugees (UNHCR), Resettlement Associate, 2009-2023
+
+
+Favorite quote: Start where you are. Use what you have. Do what you can~Arthur Ashe
