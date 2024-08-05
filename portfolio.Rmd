@@ -81,19 +81,19 @@ Inference Parameter Estimation: Uses sample data to estimate population paramete
 
 Maximum Likelihood Estimation (MLE) Likelihood Function: Represents the probability of observed data as a function of parameters. Maximizing Likelihood: Finds parameter values that make the observed data most probable. Process: Define, maximize, and evaluate the likelihood function to estimate parameters.
 
-# Applying Probability and MLE to the Instacart Project
+# Applying Probability and MLE to the Instacart Market Basket Analysis Project
 In the Instacart Market Basket Analysis, predicting whether a product will be reordered based on features like add_to_cart_order.
-Here's how probability and MLE are foundational to this process:
 
+Here's how probability and MLE are foundational to this process:
 Model Specification: Specify a logistic regression model to predict the probability of reordering.
 Likelihood Function: Derive the likelihood function based on the logistic regression model.
 Parameter Estimation: Using MLE, estimate the model parameters (coefficients) that maximize the likelihood of observing the given data.
+
 Inference: Use statistical inference to make predictions and assess the significance of the predictors.
 Model Evaluation: Evaluate the model's performance using metrics like accuracy, precision, recall, and AUC-ROC, which are all rooted in probability. These concepts, can build robust statistical models that provide valuable insights into customer behavior and improve decision-making processes in the Instacart Market Basket Analysis.
 
 Step-by-Step Model Specification for Logistic Regression
 specifying a logistic regression model to predict the probability of reordering in the Instacart Market Basket Analysis.
-
 1. Define the Response Variable
 The response variable in our logistic regression model is binary, indicating whether a product is reordered (reordered = 1) or not (reordered = 0).
 
@@ -101,7 +101,6 @@ The response variable in our logistic regression model is binary, indicating whe
 The predictor variables are the features that we use to predict the response variable. For simplicity, let's start with a single predictor: add_to_cart_order.
 
 Specify the Logistic Regression Model
-
 Evaluating the Model Fit and Making Predictions
 Now that we have specified the logistic regression model, let's move on to evaluating the model fit and making predictions.
 In logistic regression, we model the log-odds of the response variable as a linear combination of the predictor variables. The logistic regression model can be written as:
@@ -132,7 +131,7 @@ Given the coefficient estimates from the output:
 Thus, the equation becomes:
 
 
-logit(𝑝^) = 0.06848−0.003812×add_to_cart_order
+logit(𝑝^) = 0.06848−0.003812Xadd_to_cart_order
 
 Interpreting the Coefficients:
 Intercept (𝛽0): This is the log-odds of the outcome (reordered) when the predictor (add_to_cart_order) is 0. In practice, an add_to_cart_order of 0 might not be meaningful, but this is the baseline level in the model.
@@ -142,7 +141,7 @@ Slope (𝛽1): This represents the change in the log-odds of the outcome for a o
 Model in Probability Terms:
 The logistic regression model can also be expressed in terms of the probability p^ of the event occurring (i.e., the product being reordered):
 
-𝑝^ =1/1+e −(0.06848−0.003812×add_to_cart_order)
+𝑝^ =1/1+e−(0.06848−0.003812Xadd_to_cart_order)
 
 
 This equation gives the predicted probability of a product being reordered based on its add_to_cart_order value.
