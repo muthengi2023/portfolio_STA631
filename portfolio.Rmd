@@ -69,28 +69,17 @@ The logistic regression model indicates that the position of a product in the ca
 
 Interpretation
 Accuracy: 0.5973, this means that the model correctly predicts the reorder status 59.73% of the time. While this is better than random guessing, it is not particularly high, suggesting the model has room for improvement.
-The model has high specificity, meaning it is good at identifying non-reordered products, but low sensitivity, meaning it struggles to identify reordered products.
-The overall accuracy is modest at 59.73%, with a balanced accuracy of 52.66%, indicating the model performs moderately well but has significant room for improvement.
-The model's predictions are slightly better than random guessing.
+The model has high specificity, meaning it is good at identifying non-reordered products, but low sensitivity, meaning it struggles to identify reordered products. The overall accuracy is modest at 59.73%, with a balanced accuracy of 52.66%, indicating the model performs moderately well but has significant room for improvement. The model's predictions are slightly better than random guessing.
 
 # Describe probability as a foundation of statistical modeling, including inference and maximum likelihood estimation
 
 Probability forms the bedrock of statistical modeling, providing the framework for quantifying uncertainty and making inferences about a population based on sample data. Here’s how probability underpins statistical modeling, including inference and maximum likelihood estimation:
 
-Probability in Statistical Modeling
-Foundation for Models: Defines distributions and random variables.
-Quantifying Uncertainty: Helps assess data variability and model fit.
-Random Variables: These are variables whose values are outcomes of a random phenomenon. Probability theory helps in defining and analyzing these variables and their distributions, which is crucial for creating statistical models.
+Probability in Statistical Modeling Foundation for Models: Defines distributions and random variables. Quantifying Uncertainty: Helps assess data variability and model fit. Random Variables: These are variables whose values are outcomes of a random phenomenon. Probability theory helps in defining and analyzing these variables and their distributions, which is crucial for creating statistical models.
 
-Inference
-Parameter Estimation: Uses sample data to estimate population parameters.
-Hypothesis Testing: Evaluates evidence against a null hypothesis using p-values.
-Confidence Intervals: Provides a range of values for parameter estimates.
+Inference Parameter Estimation: Uses sample data to estimate population parameters. Hypothesis Testing: Evaluates evidence against a null hypothesis using p-values. Confidence Intervals: Provides a range of values for parameter estimates.
 
-Maximum Likelihood Estimation (MLE)
-Likelihood Function: Represents the probability of observed data as a function of parameters.
-Maximizing Likelihood: Finds parameter values that make the observed data most probable.
-Process: Define, maximize, and evaluate the likelihood function to estimate parameters.
+Maximum Likelihood Estimation (MLE) Likelihood Function: Represents the probability of observed data as a function of parameters. Maximizing Likelihood: Finds parameter values that make the observed data most probable. Process: Define, maximize, and evaluate the likelihood function to estimate parameters.
 
 # Applying Probability and MLE to the Instacart Project
 In the Instacart Market Basket Analysis, you are predicting whether a product will be reordered based on features like add_to_cart_order.
