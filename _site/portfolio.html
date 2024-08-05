@@ -2189,32 +2189,20 @@ The coefficient for add_to_cart_order represents the change in the log-odds of t
 <p><img src="model_evaluation.png" /></p>
 <p>Interpretation
 Accuracy: 0.5973, this means that the model correctly predicts the reorder status 59.73% of the time. While this is better than random guessing, it is not particularly high, suggesting the model has room for improvement.
-The model has high specificity, meaning it is good at identifying non-reordered products, but low sensitivity, meaning it struggles to identify reordered products.
-The overall accuracy is modest at 59.73%, with a balanced accuracy of 52.66%, indicating the model performs moderately well but has significant room for improvement.
-The model’s predictions are slightly better than random guessing.</p>
+The model has high specificity, meaning it is good at identifying non-reordered products, but low sensitivity, meaning it struggles to identify reordered products. The overall accuracy is modest at 59.73%, with a balanced accuracy of 52.66%, indicating the model performs moderately well but has significant room for improvement. The model’s predictions are slightly better than random guessing.</p>
 <h1 id="describe-probability-as-a-foundation-of-statistical-modeling-including-inference-and-maximum-likelihood-estimation">Describe probability as a foundation of statistical modeling, including inference and maximum likelihood estimation</h1>
 <p>Probability forms the bedrock of statistical modeling, providing the framework for quantifying uncertainty and making inferences about a population based on sample data. Here’s how probability underpins statistical modeling, including inference and maximum likelihood estimation:</p>
-<p>Probability in Statistical Modeling
-Foundation for Models: Defines distributions and random variables.
-Quantifying Uncertainty: Helps assess data variability and model fit.
-Random Variables: These are variables whose values are outcomes of a random phenomenon. Probability theory helps in defining and analyzing these variables and their distributions, which is crucial for creating statistical models.</p>
-<p>Inference
-Parameter Estimation: Uses sample data to estimate population parameters.
-Hypothesis Testing: Evaluates evidence against a null hypothesis using p-values.
-Confidence Intervals: Provides a range of values for parameter estimates.</p>
-<p>Maximum Likelihood Estimation (MLE)
-Likelihood Function: Represents the probability of observed data as a function of parameters.
-Maximizing Likelihood: Finds parameter values that make the observed data most probable.
-Process: Define, maximize, and evaluate the likelihood function to estimate parameters.</p>
+<p>Probability in Statistical Modeling Foundation for Models: Defines distributions and random variables. Quantifying Uncertainty: Helps assess data variability and model fit. Random Variables: These are variables whose values are outcomes of a random phenomenon. Probability theory helps in defining and analyzing these variables and their distributions, which is crucial for creating statistical models.</p>
+<p>Inference Parameter Estimation: Uses sample data to estimate population parameters. Hypothesis Testing: Evaluates evidence against a null hypothesis using p-values. Confidence Intervals: Provides a range of values for parameter estimates.</p>
+<p>Maximum Likelihood Estimation (MLE) Likelihood Function: Represents the probability of observed data as a function of parameters. Maximizing Likelihood: Finds parameter values that make the observed data most probable. Process: Define, maximize, and evaluate the likelihood function to estimate parameters.</p>
 <h1 id="applying-probability-and-mle-to-the-instacart-project">Applying Probability and MLE to the Instacart Project</h1>
-<p>In the Instacart Market Basket Analysis, you are predicting whether a product will be reordered based on features like add_to_cart_order.
+<p>In the Instacart Market Basket Analysis, predicting whether a product will be reordered based on features like add_to_cart_order.
 Here’s how probability and MLE are foundational to this process:</p>
-<p>Model Specification: You specify a logistic regression model to predict the probability of reordering.
-Likelihood Function: You derive the likelihood function based on the logistic regression model.
-Parameter Estimation: Using MLE, you estimate the model parameters (coefficients) that maximize the likelihood of observing the given data.
-Inference: You use statistical inference to make predictions and assess the significance of the predictors.
-Model Evaluation: You evaluate the model’s performance using metrics like accuracy, precision, recall, and AUC-ROC, which are all rooted in probability.
-By understanding and applying these concepts, you can build robust statistical models that provide valuable insights into customer behavior and improve decision-making processes in the Instacart Market Basket Analysis.</p>
+<p>Model Specification: Specify a logistic regression model to predict the probability of reordering.
+Likelihood Function: Derive the likelihood function based on the logistic regression model.
+Parameter Estimation: Using MLE, estimate the model parameters (coefficients) that maximize the likelihood of observing the given data.
+Inference: Use statistical inference to make predictions and assess the significance of the predictors.
+Model Evaluation: Evaluate the model’s performance using metrics like accuracy, precision, recall, and AUC-ROC, which are all rooted in probability. These concepts, can build robust statistical models that provide valuable insights into customer behavior and improve decision-making processes in the Instacart Market Basket Analysis.</p>
 <p>Step-by-Step Model Specification for Logistic Regression
 specifying a logistic regression model to predict the probability of reordering in the Instacart Market Basket Analysis.</p>
 <ol type="1">
@@ -2241,14 +2229,12 @@ In logistic regression, we model the log-odds of the response variable as a line
 <p>Thus, the equation becomes:</p>
 <p>logit(𝑝^) = 0.06848−0.003812×add_to_cart_order</p>
 <p>Interpreting the Coefficients:
-Intercept (𝛽0): This is the log-odds of the outcome (reordered) when the predictor (add_to_cart_order) is 0. In practice, an add_to_cart_order of 0 might not be meaningful, but this is the baseline level in the model.
-Slope (𝛽1): This represents the change in the log-odds of the outcome for a one-unit increase in the predictor. Specifically, for each additional position in the order that a product is added to the cart, the log-odds of the product being reordered decreases by -0.003812.</p>
+Intercept (𝛽0): This is the log-odds of the outcome (reordered) when the predictor (add_to_cart_order) is 0. In practice, an add_to_cart_order of 0 might not be meaningful, but this is the baseline level in the model.</p>
+<p>Slope (𝛽1): This represents the change in the log-odds of the outcome for a one-unit increase in the predictor. Specifically, for each additional position in the order that a product is added to the cart, the log-odds of the product being reordered decreases by -0.003812.</p>
 <p>Model in Probability Terms:
-The logistic regression model can also be expressed in terms of the probability
-p^ of the event occurring (i.e., the product being reordered):</p>
-<p>𝑝^ =1/1+e −(0.06848−0.003812×add_to_cart_order)
-​
-This equation gives the predicted probability of a product being reordered based on its add_to_cart_order value.</p>
+The logistic regression model can also be expressed in terms of the probability p^ of the event occurring (i.e., the product being reordered):</p>
+<p>𝑝^ =1/1+e −(0.06848−0.003812×add_to_cart_order)</p>
+<p>This equation gives the predicted probability of a product being reordered based on its add_to_cart_order value.</p>
 <p>Interpretation</p>
 <ol type="1">
 <li>Coefficients
@@ -2274,16 +2260,15 @@ Degrees of Freedom:</p>
 Number of Fisher Scoring Iterations: 4 this is the number of iterations Fisher’s scoring algorithm took to converge to a solution.</p>
 <p>This model suggests that add_to_cart_order is a significant predictor of the probability of reordering, with higher cart positions being associated with a lower likelihood of reordering.</p>
 <p>Goodness of Fit: The residual deviance is close to the null deviance, suggesting the model explains some of the variability in the data, but there may still be room for improvement.</p>
-<p>Model Selection: The AIC can be used to compare this model to other models (if you have them) to determine which model has the best trade-off between fit and complexity.</p>
 <ol start="2" type="1">
 <li>Making Predictions
-We can use the fitted model to predict the probability of reordering for the given data. We’ll use the predict function to get the predicted probabilities.</li>
+Use the fitted model to predict the probability of reordering for the given data. We’ll use the predict function to get the predicted probabilities.</li>
 </ol>
 <p><img src="predictions.png" /></p>
 <p>Interpretation
 add_to_cart_order: This shows the position of the product in the cart. For example, in the first row, add_to_cart_order is 1, meaning this product was the first item added to the cart.</p>
 <p>reordered: This binary indicator shows whether the product was reordered (1) or not (0). In the example, the first product was reordered (reordered = 1), while the third product was not (reordered = 0).</p>
-<p>predicted_prob: This column likely represents the predicted probability of a product being reordered, as predicted by a model. For instance, in the first row, predicted_prob is 0.6562661, suggesting a high probability of the product being reordered. Helps to gauge how likely each product is to be reordered according to the model’s predictions. For example, in the first row, predicted_prob is 0.6562661, suggesting a high probability of the product being reordered.f</p>
+<p>predicted_prob: This column likely represents the predicted probability of a product being reordered, as predicted by a model. For instance, in the first row, predicted_prob is 0.6562661, suggesting a high probability of the product being reordered. Helps to gauge how likely each product is to be reordered according to the model’s predictions. For example, in the first row, predicted_prob is 0.6562661, suggesting a high probability of the product being reordered.</p>
 <ol start="3" type="1">
 <li>Assess Model Performance
 To assess the model performance, we will calculate the accuracy and confusion matrix.</li>
@@ -2293,9 +2278,10 @@ To assess the model performance, we will calculate the accuracy and confusion ma
 Accuracy: 0.5972, this is the proportion of all correct predictions (both 0 and 1) out of the total number of predictions. It indicates that about 59.72% of the predictions made by the model are correct.</p>
 <p>95% Confidence Interval for Accuracy: (0.597, 0.5973), we are 95% confident that the true accuracy of the model is between 59.7% and 59.73%.</p>
 <h1 id="conducting-model-selection-for-logistic-regression">Conducting Model Selection for Logistic Regression</h1>
-<p>To improve model performance, we can conduct model selection by comparing a set of candidate models with different predictor variables. We’ll use techniques such as Akaike Information Criterion (AIC) and Bayesian Information Criterion (BIC) to compare models and select the best one.</p>
+<p>Model Selection: The AIC can be used to compare this model to other models to determine which model has the best trade-off between fit and complexity.</p>
+<p>To improve model performance, we can conduct model selection by comparing a set of candidate models with different predictor variables. By using techniques such as Akaike Information Criterion (AIC) and Bayesian Information Criterion (BIC) to compare models and select the best one.</p>
 <p>1 Define Candidate Models
-We’ll define a few candidate models with different combinations of predictor variables. For simplicity, let’s start with the following:</p>
+Define a few candidate models with different combinations of predictor variables. For simplicity, let’s start with the following:</p>
 <p>Model 1: reordered ~ add_to_cart_order
 Model 2: reordered ~ add_to_cart_order + order_id
 Model 3: reordered ~ add_to_cart_order + product_id
@@ -2314,7 +2300,7 @@ Model 4: reordered ~ add_to_cart_order + order_id + product_id
 AIC: 4,335,390
 BIC: 4,335,442</p>
 <p>2 Compare the Models
-We’ll fit each model using the glm function.</p>
+Fit each model using the glm function.</p>
 <p>Interpretation</p>
 <p>Best Model Based on AIC
 Model 3 (reordered ~ add_to_cart_order + product_id) has the lowest AIC value (4,335,389), indicating it is the best model in terms of balancing goodness of fit and model complexity based on AIC.
@@ -2334,13 +2320,13 @@ Model Performance:</p>
 <p>Accuracy: Our best model correctly predicted whether a product would be reordered about 60% of the time. This means that in 6 out of 10 cases, the model’s predictions were accurate.
 Predicting Reorders: The model is good at identifying products that are not reordered, with a high success rate in these predictions. However, it’s less effective at spotting products that will be reordered.</p>
 <h1 id="conclusion">Conclusion</h1>
-<p>Based on the analysis results where product_id and add_to_cart_order are identified as significant predictors of reordered, we can draw some conclusions about Instacart Market Basket Analysis:
-Reordering Patterns: The analysis reveals that certain products (product_id) and their position in the cart (add_to_cart_order) significantly influence whether a consumer will reorder them. For instance, products with higher reorder rates (reorder_rate closer to 1) tend to show patterns where they are frequently placed early in the cart (add_to_cart_order 1 or 2), suggesting they are prioritized by consumers.
-Predictive Insights: Products that are frequently reordered (reorder_rate high) often exhibit specific characteristics. These might include popular products (product_id) that are regularly placed at the beginning of the shopping cart (add_to_cart_order low values). This behavior indicates that certain products are more likely to be repurchased, possibly due to consumer preferences or daily necessities.
-These insights help in understanding consumer behavior and can guide strategies to optimize product placements, marketing efforts, and inventory management on platforms like Instacart, enhancing customer satisfaction and retention.</p>
+<p>Based on the analysis results where product_id and add_to_cart_order are identified as significant predictors of reordered, we can draw some conclusions about Instacart Market Basket Analysis:</p>
+<p>Reordering Patterns: The analysis reveals that certain products (product_id) and their position in the cart (add_to_cart_order) significantly influence whether a consumer will reorder them. For instance, products with higher reorder rates (reorder_rate closer to 1) tend to show patterns where they are frequently placed early in the cart (add_to_cart_order 1 or 2), suggesting they are prioritized by consumers.</p>
+<p>Predictive Insights: Products that are frequently reordered (reorder_rate high) often exhibit specific characteristics. These might include popular products (product_id) that are regularly placed at the beginning of the shopping cart (add_to_cart_order low values). This behavior indicates that certain products are more likely to be repurchased, possibly due to consumer preferences or daily necessities.</p>
 <p>Improved Recommendations: By using this model, we can tailor product recommendations more effectively. For example, if we know that a product is often reordered when placed in a specific position in the cart, we can highlight such products in our recommendations.</p>
 <p>Focus on Popular Products: The model also helps identify which products are likely to be reordered based on their specific characteristics. This allows us to focus on popular items and ensure they are available when needed.</p>
 <p>Enhanced Customer Experience: With better predictions, we can enhance the shopping experience by offering products that customers are more likely to reorder, leading to higher customer satisfaction and loyalty.</p>
+<p>These insights help in understanding consumer behavior and can guide strategies to optimize product placements, marketing efforts, and inventory management on platforms like Instacart, enhancing customer satisfaction and retention.</p>
 <h1 id="recommendations">Recommendations</h1>
 <ol type="1">
 <li>Instacart could use these insights to optimize their recommendations and promotions. Products identified as likely to be reordered could be featured more prominently or suggested during checkout to increase reordering rates.</li>
