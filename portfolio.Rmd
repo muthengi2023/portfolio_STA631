@@ -17,7 +17,7 @@ The Instacart Market Basket Analysis is a project that aims to predict which pro
 For this analysis, I will use a logistic regression model to predict the likelihood of a product being reordered. Logistic regression is suitable for this task as it can handle binary outcomes (reordered or not reordered) and provides probabilities that help in making informed predictions. By predicting which products an Instacart consumer will purchase again, businesses can tailor marketing strategies, enhance customer satisfaction, and drive sales growth through personalized shopping experiences.
 
 # Data Preprocessing
-Inspect the data and preprocess it as necessary.
+Inspect the data and preprocess it.
 
 ![](Datatype.png)
 
