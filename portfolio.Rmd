@@ -82,15 +82,14 @@ Inference Parameter Estimation: Uses sample data to estimate population paramete
 Maximum Likelihood Estimation (MLE) Likelihood Function: Represents the probability of observed data as a function of parameters. Maximizing Likelihood: Finds parameter values that make the observed data most probable. Process: Define, maximize, and evaluate the likelihood function to estimate parameters.
 
 # Applying Probability and MLE to the Instacart Project
-In the Instacart Market Basket Analysis, you are predicting whether a product will be reordered based on features like add_to_cart_order.
+In the Instacart Market Basket Analysis, predicting whether a product will be reordered based on features like add_to_cart_order.
 Here's how probability and MLE are foundational to this process:
 
-Model Specification: You specify a logistic regression model to predict the probability of reordering.
-Likelihood Function: You derive the likelihood function based on the logistic regression model.
-Parameter Estimation: Using MLE, you estimate the model parameters (coefficients) that maximize the likelihood of observing the given data.
-Inference: You use statistical inference to make predictions and assess the significance of the predictors.
-Model Evaluation: You evaluate the model's performance using metrics like accuracy, precision, recall, and AUC-ROC, which are all rooted in probability.
-By understanding and applying these concepts, you can build robust statistical models that provide valuable insights into customer behavior and improve decision-making processes in the Instacart Market Basket Analysis.
+Model Specification: Specify a logistic regression model to predict the probability of reordering.
+Likelihood Function: Derive the likelihood function based on the logistic regression model.
+Parameter Estimation: Using MLE, estimate the model parameters (coefficients) that maximize the likelihood of observing the given data.
+Inference: Use statistical inference to make predictions and assess the significance of the predictors.
+Model Evaluation: Evaluate the model's performance using metrics like accuracy, precision, recall, and AUC-ROC, which are all rooted in probability. These concepts, can build robust statistical models that provide valuable insights into customer behavior and improve decision-making processes in the Instacart Market Basket Analysis.
 
 Step-by-Step Model Specification for Logistic Regression
 specifying a logistic regression model to predict the probability of reordering in the Instacart Market Basket Analysis.
