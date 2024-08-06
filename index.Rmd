@@ -7,7 +7,7 @@ links:
   - label: GitHub
     url: "https://github.com/muthengi2023"
   - label: Email
-    url: "mailto:email@email.com"
+    url: "mailto:muthengi08@gmail.com"
     
 output:
   postcards::trestles
