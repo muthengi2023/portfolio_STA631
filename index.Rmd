@@ -8,8 +8,6 @@ links:
       href: https://www.linkedin.com/in/maureenmuthengi/ 
     - icon: fa fa-Email
       href: https://github.com/muthengi2023
-    - label: Email
-    url: "mailto:email@email.com"
     
 output:
   postcards::trestles
