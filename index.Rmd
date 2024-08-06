@@ -2,12 +2,15 @@
 title: "Maureen Muthengi"
 image: "Maureen_Muthengi.jpg"
 links:
-  - label: LinkedIn
-    url: "https://www.linkedin.com/in/maureenmuthengi/"
-  - label: GitHub
-    url: "https://github.com/muthengi2023"
-  - label: Email
+    - icon: fa fa-github
+      href: https://github.com/muthengi2023 
+    - icon: fa fa-linkedin
+      href: https://www.linkedin.com/in/maureenmuthengi/ 
+    - icon: fa fa-Email
+      href: https://github.com/muthengi2023
+    - label: Email
     url: "mailto:email@email.com"
+    
 output:
   postcards::trestles
 site: distill::distill_website
